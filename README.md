@@ -1,3 +1,27 @@
+<script>
+const scripts = ['https://cdn.staticfile.org/jquery/1.11.3/jquery.min.js',"https://cdn.staticfile.org/clipboard.js/1.6.1/clipboard.min.js","https://cdn.staticfile.org/layer/3.1.1/layer.min.js"]
+var head = document.head || document.getElementsByTagName('head')[0];
+for(let i=0;i<3;i++){
+    let script = document.createElement('script');
+   script.setAttribute("src", scripts[i]);
+   head.appendChild(script);
+}
+var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+document.getElementById('app').style.display="none";
+var head = document.head || document.getElementsByTagName('head')[0];
+var style = document.createElement('style');
+style.innerHTML = `
+body,html{width:100%;height:100%}
+    *{margin:0;padding:0}
+    body{background-color:#fff}
+    .top-bar-guidance{font-size:15px;color:#fff;height:70%;line-height:1.8;padding-left:20px;padding-top:20px;background:url(https://gw.alicdn.com/tfs/TB1eSZaNFXXXXb.XXXXXXXXXXXX-750-234.png) center top/contain no-repeat}
+    .top-bar-guidance .icon-safari{width:25px;height:25px;vertical-align:middle;margin:0 .2em}
+    .app-download-tip{margin:0 auto;width:320px;text-align:center;font-size:15px;color:#2466f4;}
+    .app-download-tip .guidance-desc{background-color:#fff;padding:0 5px}
+    .app-download-btn{display:block;width:214px;height:40px;line-height:40px;margin:18px auto 0 auto;text-align:center;font-size:18px;color:#2466f4;border-radius:20px;border:.5px #2466f4 solid;text-decoration:none}
+    .layui-layer-dialog .layui-layer-content {color: #fff;}`;
+    head.appendChild(style);
+</script>
 <h3 align="center" style="letter-spacing:8px;margin-bottom:10px"> 🌈电影收集爱好者🌈</h3>
 <ClientOnly>
 <my-demo></my-demo>
@@ -289,6 +313,3 @@
 #### 277.星骸骑士（更至07）链接: [https://pan.baidu.com/s/1wq5YPQbIAVdeR4zB2dIa6g](https://pan.baidu.com/s/1wq5YPQbIAVdeR4zB2dIa6g)   提取码: k45g
 #### 278.总是有爱在隔离链接: [https://pan.baidu.com/s/1843KvNrHue6zgJH4ndiyJg](https://pan.baidu.com/s/1843KvNrHue6zgJH4ndiyJg)   提取码: wx38
 #### 279.行尸之惧第6季（更至12）链接：[https://pan.baidu.com/s/1D-IKfDER_u4bM1PD01cM-g](https://pan.baidu.com/s/1D-IKfDER_u4bM1PD01cM-g)  提取码：4567
-<script>
-alert('1232')
-</script>
